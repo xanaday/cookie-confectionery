@@ -44,7 +44,7 @@ $(document).ready(function() {
                     }
             }
         
-            $(".reset").click(function() {
+            $(newFunction()).click(function() {
                 Cookies.set("chocolate", 0);
                 Cookies.set("lemon", 0);
                 Cookies.set("sugar", 0);
@@ -55,3 +55,6 @@ $(document).ready(function() {
             });
         });
     });
+    function newFunction() {
+        return ".reset";
+}
